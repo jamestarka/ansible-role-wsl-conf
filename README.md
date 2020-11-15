@@ -1,25 +1,26 @@
-Role Name
-=========
+# Ansible Role: Windows Subsystem for Linux (WSL)
 
-A brief description of the role goes here.
+An Ansible role that configures a distro within the [Windows Subsystem for Linux (WSL)](https://docs.microsoft.com/en-us/windows/wsl/). This role does not handle installation of WSL or a distro - it only manages WSL-specific configuration items within the distro that is running.
 
-Requirements
-------------
+## Status
 
-Any pre-requisites that may not be covered by Ansible itself or the role should be mentioned here. For instance, if the role uses the EC2 module, it may be a good idea to mention in this section that the boto package is required.
+This role is in its alpha stages. This role should not be considered production-ready; use at your own risk.
 
-Role Variables
---------------
+## Requirements
+
+Target hosts will need Windows Subsystem for Linux supported and enabled. This role does not handle the installation of WSL. There is no distro-specific content in the role, but the role has only been tested using Ubuntu 18.04 LTS.
+
+## Role Variables
+
+TODO need to describe variables once they have been defined - see the default explanation below
 
 A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
 
-Dependencies
-------------
+## Dependencies
 
-A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
+None.
 
-Example Playbook
-----------------
+## Example Playbook
 
 Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
 
@@ -27,12 +28,16 @@ Including an example of how to use your role (for instance, with variables passe
       roles:
          - { role: username.rolename, x: 42 }
 
-License
--------
+See also the example playbook for [using Windows as an Ansible control node](TODO add the link to a specific portion of the document).
+
+## Development
+
+Testing - TODO add a link to documentation
+
+## License
 
 MIT
 
-Author Information
-------------------
+## Author Information
 
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+This role was created in 2020 by James Tarka. Contributions are welcome - see [Contributing](CONTRIBUTING.md).
